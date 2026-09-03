@@ -9,6 +9,7 @@
 #include "input.h"
 //font
 #include "Letter_Gothic_Std_14_Bold_png.h"
+#include "grrlib_logo_png.h"
 #define version 1.6
 #define RED 0xFF0000FF
 #define WHITE 0xFFFFFFFF
@@ -21,17 +22,15 @@ int main() {
     GRRLIB_Settings.antialias = true;
     GRRLIB_SetBackgroundColour(0x00, 0x00, 0x00, 0xFF); 
     GRRLIB_SetLightAmbient(0x333333FF);
-    //audio init
-    //ASND_Init();
-	//MP3Player_Init();
-    //controller init
     InitInput();
-    //font intit
     GRRLIB_texImg *tex_font = GRRLIB_LoadTexture(Letter_Gothic_Std_14_Bold_png);
+	GRRLIB_texImg *tex_gr = GRRLIB_LoadTexturePNG(grrlib_logo_png);
+
     GRRLIB_InitTileSet(tex_font, 11, 24, 32);
 
     while(1) {
         GRRLIB_2dMode();
+		GRRLIB_Printf(100,20,,,demosplash)
       
 		GRRLIB_3dMode();
 		GRRLIB_ObjectView()//controls object paremters
