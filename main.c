@@ -1,4 +1,3 @@
-// some of this code (mostly the inilation scpits) contain some code fromb a grrlib template exsample. https://github.com/GRRLIB/GRRLIB/tree/master/examples/template
 //graphics
 #include <grrlib.h>
 #include <stdlib.h>
@@ -25,13 +24,12 @@ int main() {
     InitInput();
     GRRLIB_texImg *tex_font = GRRLIB_LoadTexture(Letter_Gothic_Std_14_Bold_png);
 	GRRLIB_texImg *tex_gr = GRRLIB_LoadTexturePNG(grrlib_logo_png);
-
     GRRLIB_InitTileSet(tex_font, 11, 24, 32);
 
     while(1) {
         GRRLIB_2dMode();
 		GRRLIB_Printf(100,20,,,demosplash)
-      
+        GRRLIB
 		GRRLIB_3dMode();
 		GRRLIB_ObjectView()//controls object paremters
     }
