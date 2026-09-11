@@ -29,7 +29,7 @@ int main() {
     while(1) {
         GRRLIB_2dMode();
 		GRRLIB_Printf(100,20,,,demosplash)
-        GRRLIB
+        GRRLIBDrawImg(540,420,tex_gr,0,1,1,WHITE)
 		GRRLIB_3dMode();
 		GRRLIB_ObjectView()//controls object paremters
     }
