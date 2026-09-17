@@ -14,8 +14,6 @@
 #define BLUE 0x0000FFFF
 #define BLACK 0x000000FF
 int main() {
-    //Scene currentScene = SCENE_MENU;
-    //graphics library init
     GRRLIB_Init();
     GRRLIB_Settings.antialias = true;
     GRRLIB_SetBackgroundColour(0x00, 0x00, 0x00, 0xFF); 
@@ -28,8 +26,8 @@ int main() {
     while(1) {
         GRRLIB_2dMode();
 		GRRLIB_Printf(100,20,,,demosplash)
-        GRRLIBDrawImg(540,420,tex_gr,0,1,1,WHITE)
-		GRRLIB_3dMode();
+        GRRLIBDrawImg(320,420,tex_gr,0,1,1,WHITE)
+		GRRLIB_3dMode(10,10,true,true);
 		GRRLIB_ObjectView()//controls object paremters
     }
     GRRLIB_Render();
