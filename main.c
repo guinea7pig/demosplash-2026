@@ -9,7 +9,6 @@
 //font
 #include "Letter_Gothic_Std_14_Bold_png.h"
 #include "grrlib_logo_png.h"
-#define version 1.6
 #define RED 0xFF0000FF
 #define WHITE 0xFFFFFFFF
 #define BLUE 0x0000FFFF
