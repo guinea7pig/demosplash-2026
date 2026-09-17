@@ -25,7 +25,7 @@ int main() {
 
     while(1) {
         GRRLIB_2dMode();
-		GRRLIB_Printf(100,20,,,demosplash)
+		GRRLIB_Printf(100,20,tex_font,RED,4,DemoSplash)
         GRRLIBDrawImg(320,420,tex_gr,0,1,1,WHITE)
 		GRRLIB_3dMode(10,10,true,true);
 		GRRLIB_ObjectView()//controls object paremters
