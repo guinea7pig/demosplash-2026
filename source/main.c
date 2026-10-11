@@ -5,7 +5,6 @@
 #include <math.h>
 //input
 #include <wiiuse/wpad.h>
-#include "input.h"
 //font
 #include "Letter_Gothic_Std_14_Bold_png.h"
 #include "grrlib_logo_png.h"
@@ -18,20 +17,18 @@ int main() {
     GRRLIB_Settings.antialias = true;
     GRRLIB_SetBackgroundColour(0x00, 0x00, 0x00, 0xFF); 
     GRRLIB_SetLightAmbient(0x333333FF);
-    InitInput();
     GRRLIB_texImg *tex_font = GRRLIB_LoadTexture(Letter_Gothic_Std_14_Bold_png);
 	GRRLIB_texImg *tex_gr = GRRLIB_LoadTexturePNG(grrlib_logo_png);
     GRRLIB_InitTileSet(tex_font, 11, 24, 32);
 
     while(1) {
-        GRRLIB_2dMode();
-		GRRLIB_Printf(100,20,tex_font,RED,4,DemoSplash)
-        GRRLIBDrawImg(320,420,tex_gr,0,1,1,WHITE)
-		GRRLIB_3dMode(10,10,true,true);
-		GRRLIB_ObjectView()//controls object paremters
+		GRRLIB_Printf(100,20,tex_font,RED,4,"DemoSplash");
+        GRRLIB_DrawImg(320,420,tex_gr,0,1,1,WHITE);
+		//GRRLIB_3dMode(10,10,true,true);
+        GRRLIB_Render();
+
     }
-    GRRLIB_Render();
-    }
+
     //free fonts
     GRRLIB_FreeTexture(tex_font);
  
