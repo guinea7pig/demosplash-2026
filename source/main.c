@@ -24,15 +24,16 @@ int main() {
     GRRLIB_InitTileSet(tex_font, 11, 24, 32);
 
     while(1) {
-        GRRLIB_DrawImg(200,420,tex_gr,0,0.2,0.2,WHITE);
-        GRRLIB_DrawImg(50,20,tex_dem,0,1.4,1.4,WHITE);
-		//GRRLIB_3dMode(10,10,true,true);
+        GRRLIB_DrawImg(200,620,tex_gr,0,0.2,0.2,WHITE);
+        GRRLIB_DrawImg(50,0,tex_dem,0,1.4,1.4,WHITE);
+		//RRLIB_3dMode(10,10,10,true,true);
+        //GRRLIB_DrawCube(10,true,WHITE);
         GRRLIB_Render();
 
     }
 
     //free fonts
     GRRLIB_FreeTexture(tex_font);
- 
+    GRRLIB_FreeTexture(tex_dem); 
     exit(0);
 }
