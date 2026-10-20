@@ -73,11 +73,6 @@ main.o: /home/kai/Documents/GitHub/demosplash-2026/source/main.c \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h \
- /opt/devkitpro/libogc/include/wiiuse/wpad.h \
- /opt/devkitpro/libogc/include/wiiuse/wiiuse.h \
- /opt/devkitpro/libogc/include/bte/bte.h \
- /opt/devkitpro/libogc/include/bte/bd_addr.h \
- /home/kai/Documents/GitHub/demosplash-2026/build/grrlib_logo_png.h \
  /home/kai/Documents/GitHub/demosplash-2026/build/demo_png.h
 /opt/devkitpro/portlibs/wii/include/grrlib.h:
 /opt/devkitpro/libogc/include/gccore.h:
@@ -153,9 +148,4 @@ main.o: /home/kai/Documents/GitHub/demosplash-2026/source/main.c \
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h:
-/opt/devkitpro/libogc/include/wiiuse/wpad.h:
-/opt/devkitpro/libogc/include/wiiuse/wiiuse.h:
-/opt/devkitpro/libogc/include/bte/bte.h:
-/opt/devkitpro/libogc/include/bte/bd_addr.h:
-/home/kai/Documents/GitHub/demosplash-2026/build/grrlib_logo_png.h:
 /home/kai/Documents/GitHub/demosplash-2026/build/demo_png.h:
