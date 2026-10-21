@@ -3,8 +3,10 @@
 #include <math.h>
 #include "demo_png.h"
 int main() {
+    z=0;
+    x=0;
+    y=0;
     GRRLIB_Init();
-    GRRLIB_Settings.antialias = true;
     GRRLIB_texImg *tex_dem = GRRLIB_LoadTexturePNG(demo_png);
     GRRLIB_Camera3dSettings(0.0f,0.0f,10.0f, 0,1,0, 0,0,0);
 
