@@ -7,7 +7,7 @@ int main() {
     GRRLIB_texImg *tex_dem = GRRLIB_LoadTexturePNG(demo_png);
     float x = 0;
     float x2 = 1;
-    float y2 = 0;
+    float y2 = 1;
     float y = 0;
     while(1) {
         y = y + y2;
