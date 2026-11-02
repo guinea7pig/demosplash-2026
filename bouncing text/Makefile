@@ -29,7 +29,12 @@ INCLUDES	:=
 CFLAGS	= -g -O2 -Wall $(MACHDEP) $(INCLUDE)
 CXXFLAGS	=	$(CFLAGS)
 
-LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
+CFLAGS   += -ffunction-sections -fdata-sections
+CXXFLAGS += -ffunction-sections -fdata-sections
+
+
+LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map LDFLAGS  += -Wl,--gc-sections
+
 
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
