@@ -26,14 +26,12 @@ INCLUDES	:=
 # options for code generation
 #---------------------------------------------------------------------------------
 
-CFLAGS	= -g -O2 -Wall $(MACHDEP) $(INCLUDE)
-CXXFLAGS	=	$(CFLAGS)
-
-CFLAGS   += -ffunction-sections -fdata-sections
-CXXFLAGS += -ffunction-sections -fdata-sections
+CFLAGS	= -g -O2 -Wall $(MACHDEP) $(INCLUDE) -ffunction-sections -fdata-sections
+CXXFLAGS	=	$(CFLAGS) -ffunction-sections -fdata-sections
 
 
-LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map LDFLAGS  += -Wl,--gc-sections
+
+LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map  -Wl,--gc-sections
 
 
 #---------------------------------------------------------------------------------

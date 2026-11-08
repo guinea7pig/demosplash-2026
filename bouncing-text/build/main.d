@@ -1,4 +1,5 @@
-main.o: /home/kai/Documents/GitHub/demosplash-2026/source/main.c \
+main.o: \
+ /home/kai/Documents/GitHub/demosplash-2026/bouncing-text/source/main.c \
  /opt/devkitpro/portlibs/wii/include/grrlib.h \
  /opt/devkitpro/libogc/include/gccore.h \
  /opt/devkitpro/libogc/include/ogc/dsp.h \
@@ -73,7 +74,7 @@ main.o: /home/kai/Documents/GitHub/demosplash-2026/source/main.c \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h \
- /home/kai/Documents/GitHub/demosplash-2026/build/demo_png.h
+ /home/kai/Documents/GitHub/demosplash-2026/bouncing-text/build/demo_png.h
 /opt/devkitpro/portlibs/wii/include/grrlib.h:
 /opt/devkitpro/libogc/include/gccore.h:
 /opt/devkitpro/libogc/include/ogc/dsp.h:
@@ -148,4 +149,4 @@ main.o: /home/kai/Documents/GitHub/demosplash-2026/source/main.c \
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h:
-/home/kai/Documents/GitHub/demosplash-2026/build/demo_png.h:
+/home/kai/Documents/GitHub/demosplash-2026/bouncing-text/build/demo_png.h:
