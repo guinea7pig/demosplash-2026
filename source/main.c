@@ -15,7 +15,7 @@ int main(){
         if(y>370)y2=-1;
         if(x<0)x2=1;
         if(x>450)x2=-1;
-   GRRLIB_DrawImg(x,y,d,0,1.4,1.4,0xFFFFFFFF);
+   GRRLIB_DrawImg(x,y,d,0,0.4,0.4,0xFFFFFFFF);
    GRRLIB_Render();
     }
     GRRLIB_FreeTexture(d);
