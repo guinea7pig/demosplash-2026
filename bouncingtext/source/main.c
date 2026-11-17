@@ -1,23 +1,31 @@
 #include<grrlib.h>
 #include<stdlib.h>
 #include"demo_png.h"
+#include"grrlib_png.h"
+
 int main(){
     GRRLIB_Init();
     GRRLIB_texImg *d = GRRLIB_LoadTexturePNG(demo_png);
+    GRRLIB_texImg *g = GRRLIB_LoadTexturePNG(grrlib_png);
     float x=0;
     float x2=1;
     float y2=1;
     float y=0;
     while(1){
+        if()
         y=y+y2;
         x=x+x2;
         if(y<0)y2=1;
         if(y>370)y2=-1;
         if(x<0)x2=1;
         if(x>450)x2=-1;
+   if(WPAD_ButtonsDown(0) & WPAD_BUTTON_HOME)break;
    GRRLIB_DrawImg(x,y,d,0,0.4,0.4,0xFFFFFFFF);
+   GRRLIB_DrawImg(x,y-10,g,0,0.4,0.4,0xFFFFFFFF);
    GRRLIB_Render();
     }
     GRRLIB_FreeTexture(d);
+    GRRLIB_FreeTexture(g);
+
     exit(0);
 }
