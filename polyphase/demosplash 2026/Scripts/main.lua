@@ -12,7 +12,7 @@ end
 --i think this should be moving forward
 function main:Tick(deltaTime)
 
-self:AddRotation(Vec(0,60*deltaTime,30* deltaTime))
+self:AddRotation(Vec(0,0,30* deltaTime))
 self:UpdateTransform(false)
 end
 
