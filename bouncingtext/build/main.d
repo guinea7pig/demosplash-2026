@@ -1,8 +1,10 @@
-main.o: /home/kai/demosplash-2026/source/main.c \
+main.o: \
+ /home/kai/Documents/GitHub/demosplash-2026/bouncingtext/source/main.c \
  /opt/devkitpro/portlibs/wii/include/grrlib.h \
  /opt/devkitpro/libogc/include/gccore.h \
  /opt/devkitpro/libogc/include/ogc/dsp.h \
  /opt/devkitpro/libogc/include/gctypes.h \
+ /opt/devkitpro/libogc/include/tuxedo/types.h \
  /opt/devkitpro/libogc/include/ogc/aram.h \
  /opt/devkitpro/libogc/include/gcbool.h \
  /opt/devkitpro/libogc/include/ogc/arqueue.h \
@@ -11,6 +13,10 @@ main.o: /home/kai/demosplash-2026/source/main.c \
  /opt/devkitpro/libogc/include/ogc/arqmgr.h \
  /opt/devkitpro/libogc/include/ogc/audio.h \
  /opt/devkitpro/libogc/include/ogc/cache.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/cache.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/intrinsics.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/spr.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/bit.h \
  /opt/devkitpro/libogc/include/ogc/card.h \
  /opt/devkitpro/libogc/include/ogc/cast.h \
  /opt/devkitpro/libogc/include/ogc/color.h \
@@ -27,7 +33,9 @@ main.o: /home/kai/demosplash-2026/source/main.c \
  /opt/devkitpro/libogc/include/ogc/si.h \
  /opt/devkitpro/libogc/include/ogc/gx_struct.h \
  /opt/devkitpro/libogc/include/ogc/irq.h \
- /opt/devkitpro/libogc/include/ogc/context.h \
+ /opt/devkitpro/libogc/include/ogc/../gctypes.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/interrupt.h \
+ /opt/devkitpro/libogc/include/ogc/../tuxedo/mm.h \
  /opt/devkitpro/libogc/include/ogc/lwp.h \
  /opt/devkitpro/libogc/include/ogc/mutex.h \
  /opt/devkitpro/libogc/include/ogc/message.h \
@@ -66,11 +74,17 @@ main.o: /home/kai/demosplash-2026/source/main.c \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h \
  /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h \
- /home/kai/demosplash-2026/build/demo_png.h
+ /opt/devkitpro/libogc/include/wiiuse/wpad.h \
+ /opt/devkitpro/libogc/include/wiiuse/wiiuse.h \
+ /opt/devkitpro/libogc/include/bte/bte.h \
+ /opt/devkitpro/libogc/include/bte/bd_addr.h \
+ /home/kai/Documents/GitHub/demosplash-2026/bouncingtext/build/demo_png.h \
+ /home/kai/Documents/GitHub/demosplash-2026/bouncingtext/build/grrlib_png.h
 /opt/devkitpro/portlibs/wii/include/grrlib.h:
 /opt/devkitpro/libogc/include/gccore.h:
 /opt/devkitpro/libogc/include/ogc/dsp.h:
 /opt/devkitpro/libogc/include/gctypes.h:
+/opt/devkitpro/libogc/include/tuxedo/types.h:
 /opt/devkitpro/libogc/include/ogc/aram.h:
 /opt/devkitpro/libogc/include/gcbool.h:
 /opt/devkitpro/libogc/include/ogc/arqueue.h:
@@ -79,6 +93,10 @@ main.o: /home/kai/demosplash-2026/source/main.c \
 /opt/devkitpro/libogc/include/ogc/arqmgr.h:
 /opt/devkitpro/libogc/include/ogc/audio.h:
 /opt/devkitpro/libogc/include/ogc/cache.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/cache.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/intrinsics.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/spr.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/ppc/bit.h:
 /opt/devkitpro/libogc/include/ogc/card.h:
 /opt/devkitpro/libogc/include/ogc/cast.h:
 /opt/devkitpro/libogc/include/ogc/color.h:
@@ -95,7 +113,9 @@ main.o: /home/kai/demosplash-2026/source/main.c \
 /opt/devkitpro/libogc/include/ogc/si.h:
 /opt/devkitpro/libogc/include/ogc/gx_struct.h:
 /opt/devkitpro/libogc/include/ogc/irq.h:
-/opt/devkitpro/libogc/include/ogc/context.h:
+/opt/devkitpro/libogc/include/ogc/../gctypes.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/interrupt.h:
+/opt/devkitpro/libogc/include/ogc/../tuxedo/mm.h:
 /opt/devkitpro/libogc/include/ogc/lwp.h:
 /opt/devkitpro/libogc/include/ogc/mutex.h:
 /opt/devkitpro/libogc/include/ogc/message.h:
@@ -134,4 +154,9 @@ main.o: /home/kai/demosplash-2026/source/main.c \
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_pixel.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_settings.h:
 /opt/devkitpro/portlibs/wii/include/grrlib/GRRLIB_texSetup.h:
-/home/kai/demosplash-2026/build/demo_png.h:
+/opt/devkitpro/libogc/include/wiiuse/wpad.h:
+/opt/devkitpro/libogc/include/wiiuse/wiiuse.h:
+/opt/devkitpro/libogc/include/bte/bte.h:
+/opt/devkitpro/libogc/include/bte/bd_addr.h:
+/home/kai/Documents/GitHub/demosplash-2026/bouncingtext/build/demo_png.h:
+/home/kai/Documents/GitHub/demosplash-2026/bouncingtext/build/grrlib_png.h:

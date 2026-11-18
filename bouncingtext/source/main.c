@@ -1,6 +1,7 @@
 #include<grrlib.h>
-#include<stdlib.h>
-#include"demo_png.h"
+#include <wiiuse/wpad.h>
+#include <stdlib.h>
+#include "demo_png.h"
 #include"grrlib_png.h"
 
 int main(){
@@ -12,7 +13,6 @@ int main(){
     float y2=1;
     float y=0;
     while(1){
-        if()
         y=y+y2;
         x=x+x2;
         if(y<0)y2=1;
@@ -21,7 +21,7 @@ int main(){
         if(x>450)x2=-1;
    if(WPAD_ButtonsDown(0) & WPAD_BUTTON_HOME)break;
    GRRLIB_DrawImg(x,y,d,0,0.4,0.4,0xFFFFFFFF);
-   GRRLIB_DrawImg(x,y-10,g,0,0.4,0.4,0xFFFFFFFF);
+   GRRLIB_DrawImg(x-50,y-50,g,0,0.4,0.4,0xFFFFFFFF);
    GRRLIB_Render();
     }
     GRRLIB_FreeTexture(d);
