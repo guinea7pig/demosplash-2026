@@ -1,8 +1,7 @@
-main = {}
+main2 = {}
 
-function main:Create()
+function main2:Create()
 
-self:SetRotation(Vec(0,0,0))
 self:EnableOverlaps(false)
 self:EnablePhysics(false) 
 self:EnableOverlaps(false)
@@ -10,9 +9,9 @@ self:EnableOverlaps(false)
 end
 
 --i think this should be moving forward
-function main:Tick(deltaTime)
+function main2:Tick(deltaTime)
 
-self:AddRotation(Vec(0,0,30* deltaTime))
+self:AddRotation(Vec(0,0,10* deltaTime))
 self:UpdateTransform(false)
 end
 
